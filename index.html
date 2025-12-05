@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GameConnect — A Nova Era da Comunidade Gamer</title>
+  <link rel="icon" href="./Icon.png">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <div class="brand">
+      <img src="./logo.png" alt="GameConnect">
+      <h1>GameConnect</h1>
+    </div>
+    <nav>
+      <a href="#hero">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#publico">Público</a>
+      <a href="#crescimento">Crescimento</a>
+      <a href="#valor">Proposta de Valor</a>
+      <a href="#desafios">Desafios e vantagens</a>
+      <a href="#utilizacao">Guia</a>
+      <a href="https://www.figma.com/make/fRZGlegWZXDPHJ76B6kJi3/Game-connect?node-id=0-4&p=f&t=2AeOKcbwNNBLBrRY-0">Planos
+        para o Futuro</a>
+      <a href="#contato">Contato</a>
+      <a href="#comentarios">Comentarios</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-inner">
+        <h2>Game Connect: A Nova Era da Comunidade Gamer</h2>
+        <p>Facilitando a divulgação da comunidade gamer para compartilhar suas gameplays e interações em jogos virtuais
+          de forma mais conectada e engajante.</p>
+        <div style="margin-top:18px">
+          <a class="cta" href="#sobre">Conhecer a Plataforma</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+      <div style="position:relative;z-index:2">
+        <div class="accent-line"></div>
+        <h3>Uma Rede Social Revolucionária</h3>
+        <p style="max-width:900px;margin:10px auto 0">
+          Nossa plataforma oferece um espaço único onde desenvolvedores podem divulgar seus trabalhos enquanto jogadores
+          encontram um ambiente acolhedor para interagir.
+          Compartilhe conquistas, fortaleça conexões e troque experiências — desde gamers buscando ajuda para superar
+          fases difíceis até programadores enfrentando desafios no desenvolvimento.
+        </p>
+        <img src="./image01.jpeg" alt="sobre-img" id="sobre-img" nome="sobre-img">
+      </div>
+    </section>
+
+    <!-- PÚBLICO-ALVO -->
+    <section id="publico" class="section">
+      <div class="accent-line"></div>
+      <h3>Nosso Público-Alvo</h3>
+      <p>Jogadores, streamers, criadores de conteúdo e desenvolvedores — todos encontram seu espaço.</p>
+
+      <div class="cards" aria-hidden="false">
+        <article class="card">
+          <h4>Jogadores de Jogos Virtuais</h4>
+          <p>Gamers apaixonados que buscam compartilhar experiências, descobrir novos títulos e conectar-se com uma
+            comunidade vibrante. Desde casuais até profissionais.</p>
+        </article>
+
+        <article class="card">
+          <h4>Streamers e Criadores de Conteúdo</h4>
+          <p>Espaço para divulgação, interação com a comunidade e crescimento de audiência — ideal para quem cria
+            gameplay, tutoriais e lives.</p>
+        </article>
+
+        <article class="card">
+          <h4>Desenvolvedores de Games</h4>
+          <p>Programadores iniciantes e experientes que precisam de visibilidade para seus projetos, feedbacks da
+            comunidade e oportunidades de crescimento no mercado.</p>
+        </article>
+        <article class="card">
+          <h4>Empresas de Games</h4>
+          <p>Empresas de jogos atrás de ideias, funcionarios, maior contato com seus clientes e divulgação de seus
+            jogos.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CRESCIMENTO (gráfico animado) -->
+    <section id="crescimento" class="section">
+      <div class="accent-line"></div>
+      <h3>Crescimento da Comunidade Gamer</h3>
+      <p>A comunidade gamer cresce consistentemente desde 2010, demonstrando um mercado sólido e em expansão para nossa
+        plataforma.</p>
+
+      <div class="growth-wrap">
+        <div class="chart-box" aria-label="Gráfico de crescimento">
+          <canvas id="growthChart" width="900" height="320"></canvas>
+        </div>
+        <div class="legend">
+          <div class="item"><span class="swatch"></span>Usuários (estimado)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROPOSTA DE VALOR -->
+    <section id="valor" class="section">
+      <div class="accent-line"></div>
+      <h3>Nossa Proposta de Valor</h3>
+      <p>Ferramentas práticas para divulgação, centralização de informações e comunidades saudáveis que promovem
+        crescimento e engajamento.</p>
+
+      <div class="cards" style="margin-top:28px">
+        <article class="card">
+          <h4>Divulgação Facilitada</h4>
+          <p>Ajudamos programadores iniciantes e estúdios a divulgar seus projetos de forma eficiente.</p>
+        </article>
+        <article class="card">
+          <h4>Informações Centralizadas</h4>
+          <p>Encontre dicas, guias e conteúdos relevantes para subir de nível nos jogos e no desenvolvimento.</p>
+        </article>
+        <article class="card">
+          <h4>Comunidades Saudáveis</h4>
+          <p>Ambientes moderados, colaborativos e positivos para fortalecer conexões entre players e criadores.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- DESAFIOS E VANTAGENS -->
+    <section id="desafios" class="section">
+      <div class="accent-line"></div>
+      <h3>Desafios Atuais do Mercado</h3>
+      <div class="two-cols" style="margin-top:20px" id="dificuldade">
+        <div class="panel">
+          <h4>Dificuldades na Divulgação</h4>
+          <p>Programadores de jogos iniciantes enfrentam barreiras para promover seus trabalhos e alcançar o
+            público-alvo adequado.</p>
+        </div>
+        <div class="panel">
+          <h4>Comunicação Fragmentada</h4>
+          <p>A comunicação entre jogadores e criadores acontece de forma dispersa, prejudicando o feedback essencial
+            para melhorar produtos.</p>
+        </div>
+      </div>
+      <div style="margin-top:30px">
+        <h3>Nossa Vantagem Competitiva</h3>
+        <div class="cards" style="margin-top:18px">
+          <article class="card">
+            <h4>Melhor Interação</h4>
+            <p>Conexões autênticas e engajamento real.</p>
+          </article>
+          <article class="card">
+            <h4>Divulgação de Conquistas</h4>
+            <p>Espaço dedicado para celebrar e compartilhar feitos.</p>
+          </article>
+          <article class="card">
+            <h4>Soluções Práticas</h4>
+            <p>Ferramentas para elevar a experiência dos usuários e jogos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEIOS DE UTILIZAÇÃO E MODELO DE RECEITA -->
+    <section id="utilizacao" class="section">
+      <div class="accent-line"></div>
+      <h3>Meios de Utilização</h3>
+      <p>Disponível como aplicativo mobile e website responsivo — use a GameConnect onde estiver.</p>
+
+      <div class="two-cols" style="margin-top:22px">
+        <div class="panel">
+          <h4>Aplicativo Mobile</h4>
+          <p>Acesse a comunidade em qualquer lugar com uma interface otimizada para dispositivos móveis.</p>
+        </div>
+        <div class="panel">
+          <h4>Website Responsivo</h4>
+          <p>Versão web completa com todas as funcionalidades, acessível de qualquer navegador.</p>
+        </div>
+        <img src="./image02.jpeg" alt="img-left" id="img-left">
+        <img src="./monitorverde.png" alt="img-right" id="img-right">
+      </div>
+
+      <div style="margin-top:28px">
+        <h3>Modelo de Receita Sustentável</h3>
+        <div class="cards" style="margin-top:18px">
+          <article class="card">
+            <h4>Grátis para Comunidade</h4>
+            <p>Acesso gratuito para todos, incentivando crescimento orgânico.</p>
+          </article>
+          <article class="card">
+            <h4>Anúncios Estratégicos</h4>
+            <p>Publicidade segmentada para empresas que desejam atingir gamers.</p>
+          </article>
+          <article class="card">
+            <h4>Serviços Premium</h4>
+            <p>Recursos pagos opcionais para desenvolvedores que buscam maior alcance.</p>
+          </article>
+        </div>
+      </div>
+      <section id="contato" class="section">
+        <!-- Equipe e contatos -->
+        <div style="margin-top:30px">
+          <h3>Equipe</h3>
+          <div class="cards" style="margin-top:20px">
+            <article class="card">
+              <h4>Lucas Horácio</h4>
+              <p>Cargo: Progranador Back-End</p>
+              <p>Telefone: 0707-2424</p>
+            </article>
+            <article class="card">
+              <h4>João Vitor</h4>
+              <p>Cargo: Programador Back-End</p>
+              <p> Telefone: 0808-4242</p>
+            </article>
+            <article class="card">
+              <h4>Caio Dimas </h4>
+              <p>Cargo: Programador Front-End</p>
+              <p>Contato: 3232 0707</p>
+            </article>
+            <article class="card">
+              <h4>José Elias</h4>
+              <p>Cargo: Programador Front-End </p>
+              <p>Contato: 7777 4444</p>
+            </article>
+            <article class="card">
+              <h4>Luiz </h4>
+              <p>Cargo: Supervisão</p>
+              <p>Contato: haste@game.com</p>
+            </article>
+            <article class="card">
+              <h4>Maria</h4>
+              <p>Cargo: Líder de projeto </p>
+              <p>Email: nya@conect.com</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="ods-section">
+      <h2>Objetivos de Desenvolvimento Sustentável (ODS)</h2>
+      <p class="ods-desc">O projeto GameConnect está alinhado com os seguintes Objetivos da ONU:</p>
+
+      <div class="ods-container">
+
+        <div class="ods-card">
+          <h3>ODS 8</h3>
+          <p>Promove oportunidades para desenvolvedores e criadores, fortalecendo a economia criativa e tecnológica.</p>
+          <a class="ods-link" href="https://brasil.un.org/pt-br/sdgs/8" target="_blank">Saiba mais →</a>
+        </div>
+
+        <div class="ods-card">
+          <h3>ODS 9</h3>
+          <p>Incentiva inovação digital e a expansão da indústria de games por meio de tecnologia e criatividade.</p>
+          <a class="ods-link" href="https://brasil.un.org/pt-br/sdgs/9" target="_blank">Saiba mais →</a>
+        </div>
+
+        <div class="ods-card">
+          <h3>ODS 10</h3>
+          <p>Garante espaço igualitário para criadores iniciantes, pequenas equipes e novos talentos.</p>
+          <a class="ods-link" href="https://brasil.un.org/pt-br/sdgs/10" target="_blank">Saiba mais →</a>
+        </div>
+
+        <div class="ods-card">
+          <h3>ODS 17</h3>
+          <p>Fortalece a colaboração entre estúdios, comunidades e criadores por meio da GameConnect.</p>
+          <a class="ods-link" href="https://brasil.un.org/pt-br/sdgs/17" target="_blank">Saiba mais →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="comentarios" class="section">
+      <div class="accent-line"></div>
+      <h3>Comentarios e avaliações</h3>
+      <p>Deixe seu comentario</p>
+      <div class="coments" style="margin-top:20px">
+        <article class="coment">
+          <h4>@gamer_luiz</h4>
+          <p>“Mano, Gameconect salvou meu progresso no Elden Ring!
+            Procurei a fase que eu tava travado e achei uma gameplay perfeita.
+            Interface top e rápida. Recomendo demais!”</p>
+        </article>
+        <article class="coment">
+          <h4>@nath_play</h4>
+          <p>“Eu AMEI! Parece um Insta só que só de gamers.
+            Já sigo vários criadores que fazem lives e postam dicas.
+            Finalmente um app focado em quem realmente joga 😂🎮”</p>
+        </article>
+        <article class="coment">
+          <h4>@Carlos Henrique </h4>
+          <p>“Baixei o Gameconect pra meu filho e acabei usando mais que ele 😂.
+            As lives são muito parecidas com as da Twitch e as dicas realmente ajudam a passar de fase.
+            Aplicativo muito útil!”</p>
+        </article>
+        <article class="coment">
+          <h4>@Mariana Silva</h4>
+          <p>“Ótimo pra quem fica travado em jogos.
+            O sistema de busca é super prático, encontro gameplays até de jogos antigos.
+            A comunidade parece bem amigável também.”</p>
+        </article>
+        <article class="coment">
+          <h4> @ProMaster</h4>
+          <p>Mano, segui o criador aqui só por causa das dicas do Gameconect! Muito GG!</p>
+        </article>
+        <article class="coment">
+          <h4>@GameOver</h4>
+          <p> Plataforma tá fluida, a live não trava. Gostei das reações ao vivo</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer id="rodape">
+      <div style="max-width:900px;margin:0 auto">
+        <p>© 2025 GameConnect — Conectando jogadores e desenvolvedores.</p>
+        <p style="margin-top:8px;color:#9fb6a8">Criado com conteúdo do documento GameConnect.</p>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    /* ===== reveal on scroll ===== */
+    const sections = document.querySelectorAll('.section, .hero');
+    const reveal = () => {
+      const trigger = window.innerHeight * 0.85;
+      sections.forEach(s => {
+        const top = s.getBoundingClientRect().top;
+        if (top < trigger) s.classList.add('show');
+      });
+    };
+    window.addEventListener('scroll', reveal);
+    reveal();
+
+    /* ===== parallax (hero + sobre) ===== */
+    const hero = document.querySelector('.hero');
+    const sobre = document.querySelector('#sobre');
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      if (hero) hero.style.backgroundPosition = `center ${y * 0.25}px`;
+      if (sobre) sobre.style.backgroundPosition = `center ${y * 0.12}px`;
+    });
+
+    /* ===== animated growth chart (canvas) ===== */
+    (function () {
+      const canvas = document.getElementById('growthChart');
+      const ctx = canvas.getContext('2d');
+      // size adapt
+      function resizeCanvas() {
+        const box = canvas.getBoundingClientRect();
+        canvas.width = box.width * devicePixelRatio;
+        canvas.height = box.height * devicePixelRatio;
+        ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
+        drawFrame(progress); // redraw
+      }
+      window.addEventListener('resize', resizeCanvas);
+
+      // data (values approx. from pdf labels: 0,1500,3000,4500)
+      const labels = ['2010', '2014', '2018', '2022', '2024'];
+      const values = [0, 1500, 3000, 4500, 4500]; // last kept for 2024 marker
+      const maxVal = 5000;
+      const colors = { gradStart: '#52ff3d', gradEnd: '#00bfff' };
+
+      // animation control
+      let startTime = null;
+      let duration = 1600; // ms for animation
+      let progress = 0;
+
+      function drawFrame(p) {
+        // background
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        const W = canvas.width / devicePixelRatio;
+        const H = canvas.height / devicePixelRatio;
+        const padding = 40;
+        const chartH = H - padding * 2;
+        const chartW = W - padding * 2;
+        const barCount = labels.length;
+        const gap = 18;
+        const barW = (chartW - gap * (barCount - 1)) / barCount;
+        // axes / grid lines
+        ctx.font = '12px system-ui, Arial';
+        ctx.fillStyle = '#9fb6a8';
+        ctx.textAlign = 'center';
+
+        // horizontal grid (0, 1500, 3000, 4500)
+        const gridVals = [0, 1500, 3000, 4500];
+        ctx.strokeStyle = 'rgba(255,255,255,0.04)';
+        ctx.lineWidth = 1;
+        gridVals.forEach(gv => {
+          const y = padding + chartH - (gv / maxVal) * chartH;
+          ctx.beginPath();
+          ctx.moveTo(padding, y);
+          ctx.lineTo(padding + chartW, y);
+          ctx.stroke();
+          ctx.fillStyle = '#a7c9b6';
+          ctx.textAlign = 'right';
+          ctx.fillText(String(gv), padding + chartW - 4, y - 6);
+        });
+
+        // draw bars
+        for (let i = 0; i < barCount; i++) {
+          const val = values[i] * p;
+          const x = padding + i * (barW + gap);
+          const barHeight = (val / maxVal) * chartH;
+          const yTop = padding + chartH - barHeight;
+
+          // gradient
+          const g = ctx.createLinearGradient(x, yTop, x, padding + chartH);
+          g.addColorStop(0, colors.gradStart);
+          g.addColorStop(1, colors.gradEnd);
+
+          // glow (soft)
+          ctx.fillStyle = 'rgba(82,255,61,0.06)';
+          ctx.fillRect(x - 6, yTop - 12, barW + 12, barHeight + 18);
+
+          // bar
+          ctx.fillStyle = g;
+          roundRect(ctx, x, yTop, barW, barHeight, 6);
+          ctx.fill();
+
+          // top highlight
+          ctx.fillStyle = 'rgba(255,255,255,0.06)';
+          roundRect(ctx, x, yTop, barW, Math.min(8, barHeight), 6);
+          ctx.fill();
+
+          // value label above bar
+          ctx.fillStyle = '#dff7e8';
+          ctx.font = '13px system-ui, Arial';
+          ctx.textAlign = 'center';
+          ctx.fillText(Math.round(values[i] * p), x + barW / 2, yTop - 10);
+
+          // year label
+          ctx.fillStyle = '#bcdcc8';
+          ctx.font = '13px system-ui, Arial';
+          ctx.fillText(labels[i], x + barW / 2, padding + chartH + 20);
+        }
+      }
+
+      // helper: rounded rect path
+      function roundRect(ctx, x, y, w, h, r) {
+        const radius = r;
+        ctx.beginPath();
+        ctx.moveTo(x + radius, y);
+        ctx.arcTo(x + w, y, x + w, y + h, radius);
+        ctx.arcTo(x + w, y + h, x, y + h, radius);
+        ctx.arcTo(x, y + h, x, y, radius);
+        ctx.arcTo(x, y, x + w, y, radius);
+        ctx.closePath();
+      }
+
+      // animation loop
+      function animate(ts) {
+        if (!startTime) startTime = ts;
+        const elapsed = ts - startTime;
+        progress = Math.min(1, easeOutCubic(elapsed / duration));
+        drawFrame(progress);
+        if (progress < 1) requestAnimationFrame(animate);
+      }
+
+      // easing
+      function easeOutCubic(t) { return 1 - Math.pow(1 - t, 3); }
+
+      // ensure proper size & start
+      resizeCanvas();
+      requestAnimationFrame(animate);
+
+      // redraw on show (if user scrolls and chart wasn't visible initially)
+      let triggered = false;
+      const chartSection = document.getElementById('crescimento');
+      const onScrollCheck = () => {
+        if (triggered) return;
+        const top = chartSection.getBoundingClientRect().top;
+        if (top < window.innerHeight * 0.9) {
+          // restart animation elegantly
+          startTime = null; progress = 0; requestAnimationFrame(animate);
+          triggered = true;
+        }
+      };
+      window.addEventListener('scroll', onScrollCheck);
+      onScrollCheck();
+    })();
+  </script>
+</body>
+
+</html>
